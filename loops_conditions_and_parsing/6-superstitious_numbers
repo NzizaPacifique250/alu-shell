@@ -1,17 +1,52 @@
 #!/usr/bin/env bash
-#display hours from 0 to 12
-#display minutes from 1 to 59
+#change the output of 4th, 9th and 17 iteration
 
-((h=0))
 
-while [ $h -le 12 ]; do
-	echo "Hour: $h"
 
-	((m=1))
-	while [ $m -le 59 ]; do
-		echo "$m"
-		((m++))
-	done
+((n=1))
 
-	((h++))
+while [ $n -le 20 ]; do
+
+
+
+case $n in
+
+	4)
+
+	echo "$n"
+
+	echo "bad luck from China"
+
+	;;
+
+	9)
+
+	echo "$n"
+
+	echo "bad luck from Japan"
+
+	;;
+
+	17)
+
+	echo "$n"
+
+	echo "bad luck from Italy"
+
+	;;
+
+
+
+
+
+	*)
+
+
+
+	echo "$n"
+
+esac
+
+	((n++))
+
 done
